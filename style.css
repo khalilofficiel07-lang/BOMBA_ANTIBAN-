@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  text-align: center;
+  cursor: crosshair;
+}
+
+/* INTRO */
+#intro {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+}
+
+/* TEXT */
+#typing {
+  font-size: 60px;
+  text-shadow: 
+    0 0 10px red,
+    0 0 20px red,
+    0 0 40px purple;
+  animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(2px, -2px); }
+  60% { transform: translate(-1px, 1px); }
+  80% { transform: translate(1px, -1px); }
+  100% { transform: translate(0); }
+}
+
+/* PANEL */
+#panel {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+input {
+  padding: 12px;
+  margin: 10px;
+  width: 220px;
+  background: black;
+  border: 1px solid red;
+  color: white;
+}
+
+button {
+  padding: 12px 25px;
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 15px red;
+}
+
+button:hover {
+  box-shadow: 0 0 30px red;
+}
+
+.socials a {
+  margin: 10px;
+  color: #ff0066;
+  text-decoration: none;
+}
